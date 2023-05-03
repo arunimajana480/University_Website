@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style,css">
+    <link rel="preconnect" href="https://fonts.gstatics.com">
+    <link href="https://fonts.googlepis.com/css2?family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link ref="stylesheet" href="http://stackpath.bootstrapcdn.com/fontawsome/4.7.0/css/font-awesome,min.css">
+  <style>
+      *{
+    margin: 0;;
+    padding:0;
+}
+.header{
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://www.sandipuniversity.edu.in/blog/wp-content/uploads/2019/11/SU-Campus.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align:right ;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content:'' ;
+    width: 100%;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background:transparent ;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color:transparent;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #f44336;
+  color: white;
+}
+.menu{
+   width: 25px; 
+   padding-top: 15px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*------course--------*/
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-family: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*-------campus-------*/
+
+.campus{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.course-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 90%;
+    height: 50%;
+    display: block;    
+}
+/*-----facilities-----*/
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10%;
+    margin-bottom: 5%;
+    text-align: left; 
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/*---------------testimonials---------*/
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonials-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+.testimonials-col p{
+    padding: 0;
+}
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+@media(max-width:700px){
+    .testimonials-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+/*---------call to action------*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0.7)),url(https://www.proimprint.com/blog/wp-content/uploads/2020/10/15.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width:700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/*------footer-------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+  
+</style>
+
+</head>
+<body>
+    <section class="header">
+       <nav>
+        <a href="index.html"><img src="https://www.static-contents.youth4work.com/university/Documents/Colleges/CollegeBanner/ddb73f15-f901-4b5f-bbc2-16af14e70d3b.png"></a>
+          <div class="topnav" id="myTopnav"><br>
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="course.html">COURSE</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img class="menu" src="https://static.vecteezy.com/system/resources/previews/000/572/119/non_2x/menu-icon-vector.jpg">  
+            </a>
+            
+            
+          </div>
+        </nav>
+        
+        <div class="text-box">
+            <h1>Best University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum omnis,
+                <br> optio officia sed quae blanditiis voluptates cumque delectus totam nisi eius ut eum hic accusamus accusantium fuga, dicta reiciendis laboriosam!</p>
+            <a href="contact.html" class="hero-btn">Visit Us to know More</a>
+        </div>
+    </section>
+
+    <!-----course------>
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>lorem ipsum dolor sit amet, consecteture adipiscing elite.</p>
+<div class="row">
+<div class="course-col">
+<h3>Intermediate</h3>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+    Non mollitia saepe officia provident pariatur hic laboriosam quae error fugit incidunt enim porro, 
+    veniam quibusdam dolorum autem quis ipsa quam repellendus.</p>
+</div>
+
+<div class="course-col">
+    <h3>Degree</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Non mollitia saepe officia provident pariatur hic laboriosam quae error fugit incidunt enim porro, 
+        veniam quibusdam dolorum autem quis ipsa quam repellendus.</p>
+</div>
+
+<div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Non mollitia saepe officia provident pariatur hic laboriosam quae error fugit incidunt enim porro, 
+                veniam quibusdam dolorum autem quis ipsa quam repellendus.</p>
+</div>
+    </section>
+
+    <!--------campus----------->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto odio at iste blanditiis? Nam excepturi,
+             repellendus dolores aperiam dolor pariatur perferendis porro ea cumque blanditiis eum in veniam nisi.</p>
+        
+        <div class="row">
+            <div class="campus-col">
+                <img src="https://content3.jdmagicbox.com/comp/nashik/y9/0253px253.x253.130612151814.b6y9/catalogue/sandip-polytechnic-mahiravani-nashik-polytechnic-institutes-1kakpe4.png?clr=392d2d">
+                <div class="layer">
+                    <h3>NASIKH(UNIVERSITY)</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://4.imimg.com/data4/II/II/GLADMIN-/images-projects-sandip-05-500x500.jpg">
+                <div class="layer">
+                    <h3>NASIKH(FOUNDATION)</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="https://i1.sndcdn.com/artworks-000326393982-cg2y6c-t500x500.jpg">
+                <div class="layer">
+                    <h3>SIJOUL(BIHAR)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----facilities----->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia cupiditate eveniet magnam doloremque. Ipsam possimus enim sequi, quisquam unde iste expedita veniam ut labore architecto dolores at ipsa, commodi corporis?</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="https://www.sandipuniversity.edu.in/images/facility/gal7/4.jpg">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic nam amet odio ex quasi dolor voluptatum, voluptate facere vitae quo officia dolores debitis nemo dicta fugit quod ullam sit.</p>
+            </div>
+       
+            <div class="facilities-col">
+                <img src="https://www.sandipuniversity.edu.in/images/facility/gal5/8.jpg">
+                <h3>Girls & Boys Hostel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic nam amet odio ex quasi dolor voluptatum, voluptate facere vitae quo officia dolores debitis nemo dicta fugit quod ullam sit.</p>
+            </div>
+        
+            <div class="facilities-col">
+                <img src="https://www.sandipuniversity.edu.in/images/facility/gal5/1.jpg">
+                <h3>Canteens (Healthy & Tasty Food)</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic nam amet odio ex quasi dolor voluptatum, voluptate facere vitae quo officia dolores debitis nemo dicta fugit quod ullam sit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--------testimonials------->
+    <section class="testimonials">
+        <h1>What Our Student Says</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore blanditiis perspiciatis voluptatibus perferendis, quod dolore excepturi dolor aperiam suscipit sunt itaque fugiat temporibus optio placeat corrupti iste odit quidem. Illum?</p>
+
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="https://www.socialsciencespace.com/wp-content/uploads/student-3500990_960_720_opt.jpg">
+               <div> 
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic nam amet odio ex quasi dolor voluptatum, voluptate facere vitae quo officia dolores debitis nemo dicta fugit quod ullam sit.</p>
+                   <h3>Name of Student</h3>
+               </div>
+            </div>
+
+            <div class="testimonials-col">
+                <img src="https://www.socialsciencespace.com/wp-content/uploads/student-3500990_960_720_opt.jpg">
+               <div> 
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic nam amet odio ex quasi dolor voluptatum, voluptate facere vitae quo officia dolores debitis nemo dicta fugit quod ullam sit.</p>
+                   <h3>Name of Student</h3>
+               </div>
+            </div>
+        </div> 
+    </section>
+
+    <!------------contact to---------->
+
+    <section class="cta">
+        <h1>Enroll for Our Various Courses Anywhere from The World</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+
+    <!------footer------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, cum dolores ut molestias minima itaque placeat officiis,<br> quam illum cumque dolorum numquam animi sapiente nemo corrupti at aliquid accusamus eveniet.</p>
+    
+    </section>
+
+    
+
+    <!-------javaScript for Toggle menu------->
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {  
+    x.className = "topnav";
+  }
+}
+    </script>
+</body>
+</html>
